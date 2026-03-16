@@ -16,7 +16,6 @@ import {
   DollarSign,
   Heart,
   Menu,
-  Mic2,
   Music,
   Palette,
   Shield,
@@ -109,15 +108,6 @@ const SERVICES = [
 
 const COLLAB_FEATURES = [
   {
-    id: "influencers",
-    icon: Mic2,
-    title: "Influencer Network",
-    description:
-      "50+ campus and lifestyle influencers who amplify your event across Instagram, YouTube, and beyond.",
-    stat: "50+ Creators",
-    glow: "card-glow-pink",
-  },
-  {
     id: "djs",
     icon: Music,
     title: "DJ & Electronic Artists",
@@ -127,21 +117,21 @@ const COLLAB_FEATURES = [
     glow: "card-glow-purple",
   },
   {
-    id: "bands",
+    id: "media-collab",
     icon: Video,
-    title: "Live Bands & Performers",
+    title: "Media & Content Partners",
     description:
-      "Regional indie bands, folk fusion groups, and energetic cover bands that ignite the crowd.",
-    stat: "20+ Bands",
+      "Professional videographers, photographers, and content creators who capture every moment worth remembering.",
+    stat: "15+ Partners",
     glow: "card-glow-blue",
   },
 ];
 
 const STATS = [
-  { id: "influencers", value: "50+", label: "Influencers" },
   { id: "events", value: "200+", label: "Events" },
   { id: "artists", value: "30+", label: "Artists" },
   { id: "colleges", value: "100+", label: "Colleges" },
+  { id: "states", value: "15+", label: "States" },
 ];
 
 const WHY_US = [
@@ -499,13 +489,13 @@ function CollaborationsSection() {
             Powered by <span className="gradient-text">Collaborations</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            We've built relationships with creators, performers, and artists who
-            know how to make college events unforgettable.
+            We've built relationships with performers and partners who know how
+            to make college events unforgettable.
           </p>
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 max-w-3xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
